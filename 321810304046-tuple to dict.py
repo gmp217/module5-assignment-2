@@ -1,8 +1,6 @@
-t1=1,2,3
-t2='a','b','c'
+a=(('a',1),('b',2),('c',3))
+print("tuple is:",a)
 d={}
-for i in range(0,len(t1)):
-	key=t1[i]
-	value=t2[i]
-	d[key]=value
-print(d)
+for i,j in a:
+	d[i]=j
+print("after converting tuple to dictionary:",d)	
